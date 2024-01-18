@@ -1,0 +1,13 @@
+Pesquisar
+Cadastrar
+Alterar
+Excluir
+Limpar
+Sair
+
+
+Usuário (Mostrar a tela ao terminar)
+Categoria
+Funcionário
+
+Mostrar tudo ao terminar
