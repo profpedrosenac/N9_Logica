@@ -6,11 +6,13 @@ namespace MiniProjeto
     public partial class frmUsuario : Form
     {
 
-        string conexao = "" +
+        /*string conexao = "" +
             "Data Source=localhost;" +
             "Initial Catalog=N9_miniprojeto;" +
             "User ID=sa;" +
-            "Password=123456";
+            "Password=123456";*/
+
+        string conexao = MDIPrincipal.conexao;
 
         private void TestarConexao()
         {

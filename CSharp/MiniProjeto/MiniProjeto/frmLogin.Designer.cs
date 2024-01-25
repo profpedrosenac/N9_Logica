@@ -62,6 +62,7 @@
             this.txtLogin.Name = "txtLogin";
             this.txtLogin.Size = new System.Drawing.Size(476, 32);
             this.txtLogin.TabIndex = 0;
+            this.txtLogin.Text = "admin";
             // 
             // groupBox1
             // 
@@ -100,8 +101,10 @@
             // 
             this.txtSenha.Location = new System.Drawing.Point(6, 126);
             this.txtSenha.Name = "txtSenha";
+            this.txtSenha.PasswordChar = '*';
             this.txtSenha.Size = new System.Drawing.Size(476, 32);
             this.txtSenha.TabIndex = 1;
+            this.txtSenha.Text = "123456";
             // 
             // frmLogin
             // 

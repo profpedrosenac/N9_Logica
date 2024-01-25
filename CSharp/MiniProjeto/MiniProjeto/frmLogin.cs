@@ -18,11 +18,13 @@ namespace MiniProjeto
             InitializeComponent();
         }
 
-        string conexao = "" +
+        /*string conexao = "" +
             "Data Source=localhost;" +
             "Initial Catalog=N9_miniprojeto;" +
             "User ID=sa;" +
-            "Password=123456";
+            "Password=123456";*/
+
+        string conexao = MDIPrincipal.conexao;
 
         bool logado = false;
 
