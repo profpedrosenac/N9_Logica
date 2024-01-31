@@ -1,0 +1,11 @@
+C:\Users\pedro.lhjunior.SENACEDU\Desktop\teste\MiniProjeto.exe
+C:\Users\pedro.lhjunior.SENACEDU\Desktop\teste\MiniProjeto.dll
+C:\Users\pedro.lhjunior.SENACEDU\Desktop\teste\MiniProjeto.deps.json
+C:\Users\pedro.lhjunior.SENACEDU\Desktop\teste\MiniProjeto.runtimeconfig.json
+C:\Users\pedro.lhjunior.SENACEDU\Desktop\teste\MiniProjeto.pdb
+C:\Users\pedro.lhjunior.SENACEDU\Desktop\teste\System.Data.SqlClient.dll
+C:\Users\pedro.lhjunior.SENACEDU\Desktop\teste\runtimes\win-arm64\native\sni.dll
+C:\Users\pedro.lhjunior.SENACEDU\Desktop\teste\runtimes\win-x64\native\sni.dll
+C:\Users\pedro.lhjunior.SENACEDU\Desktop\teste\runtimes\win-x86\native\sni.dll
+C:\Users\pedro.lhjunior.SENACEDU\Desktop\teste\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\pedro.lhjunior.SENACEDU\Desktop\teste\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

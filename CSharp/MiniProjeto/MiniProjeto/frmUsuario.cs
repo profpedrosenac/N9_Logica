@@ -120,11 +120,14 @@ namespace MiniProjeto
                 conn.Close();
             }
 
+            CarregarGridUsuario();
+
         }
 
         private void frmUsuario_Load(object sender, EventArgs e)
         {
             TestarConexao();
+            CarregarGridUsuario();
         }
 
         private void btoExcluir_Click(object sender, EventArgs e)
@@ -162,6 +165,8 @@ namespace MiniProjeto
             {
                 conn.Close();
             }
+
+            CarregarGridUsuario();
 
         }
 
@@ -237,6 +242,8 @@ namespace MiniProjeto
             {
                 conn.Close();
             }
+
+            CarregarGridUsuario();
         }
 
         private void btoPesquisar_Click(object sender, EventArgs e)
@@ -284,6 +291,48 @@ namespace MiniProjeto
             {
                 conn.Close();
             }
+        }
+
+        private void CarregarGridUsuario()
+        {
+            string sql = "select " +
+                "id_usuario as 'ID'," +
+                "nome_usuario as 'Nome'," +
+                "Login_Usuario as 'Usuário'," +
+                "Status_Usuario as 'Status' " +
+                " from usuario where nome_usuario like '%" + txtPesquisaNome.Text + "%'";
+
+            SqlConnection conn = new SqlConnection(conexao);
+            SqlDataAdapter adapter = new SqlDataAdapter(sql,conn);
+            DataSet ds = new DataSet();
+            conn.Open();
+
+            try
+            {
+                adapter.Fill(ds);
+                dataGridUsuario.DataSource = ds.Tables[0];
+                dataGridUsuario.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCells);
+                dataGridUsuario.AutoResizeRow(0,DataGridViewAutoSizeRowMode.AllCellsExceptHeader);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro, " + ex.ToString());
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+        private void dataGridUsuario_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtCodigo.Text = dataGridUsuario.CurrentRow.Cells[0].Value.ToString();
+            btoPesquisar.PerformClick();
+        }
+
+        private void txtPesquisaNome_TextChanged(object sender, EventArgs e)
+        {
+            CarregarGridUsuario();
         }
     }
 }
