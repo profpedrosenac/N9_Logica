@@ -334,5 +334,19 @@ namespace MiniProjeto
         {
             CarregarGridUsuario();
         }
+
+        private void btoPesquisaAvancada_Click(object sender, EventArgs e)
+        {
+            frmUsuarioPesquisa frm = new frmUsuarioPesquisa();
+            frm.ShowDialog();
+
+            txtCodigo.Text = frm.idUsuario;
+            btoPesquisar.PerformClick();
+        }
+
+        private void dataGridUsuario_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btoPesquisaAvancada = new System.Windows.Forms.Button();
             this.btoPesquisar = new System.Windows.Forms.Button();
             this.txtCodigo = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -59,6 +60,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btoPesquisaAvancada);
             this.groupBox1.Controls.Add(this.btoPesquisar);
             this.groupBox1.Controls.Add(this.txtCodigo);
             this.groupBox1.Controls.Add(this.label1);
@@ -70,12 +72,22 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
+            // btoPesquisaAvancada
+            // 
+            this.btoPesquisaAvancada.Location = new System.Drawing.Point(311, 45);
+            this.btoPesquisaAvancada.Name = "btoPesquisaAvancada";
+            this.btoPesquisaAvancada.Size = new System.Drawing.Size(104, 29);
+            this.btoPesquisaAvancada.TabIndex = 2;
+            this.btoPesquisaAvancada.Text = "Pesquisa";
+            this.btoPesquisaAvancada.UseVisualStyleBackColor = true;
+            this.btoPesquisaAvancada.Click += new System.EventHandler(this.btoPesquisaAvancada_Click);
+            // 
             // btoPesquisar
             // 
             this.btoPesquisar.Location = new System.Drawing.Point(250, 45);
             this.btoPesquisar.Margin = new System.Windows.Forms.Padding(2);
             this.btoPesquisar.Name = "btoPesquisar";
-            this.btoPesquisar.Size = new System.Drawing.Size(56, 36);
+            this.btoPesquisar.Size = new System.Drawing.Size(56, 29);
             this.btoPesquisar.TabIndex = 1;
             this.btoPesquisar.Text = "...";
             this.btoPesquisar.UseVisualStyleBackColor = true;
@@ -303,6 +315,7 @@
             this.dataGridUsuario.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridUsuario.Size = new System.Drawing.Size(614, 196);
             this.dataGridUsuario.TabIndex = 4;
+            this.dataGridUsuario.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridUsuario_CellContentClick);
             this.dataGridUsuario.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridUsuario_CellDoubleClick);
             // 
             // frmUsuario
@@ -357,5 +370,6 @@
         private Button btoSair;
         private TextBox txtPesquisaNome;
         private DataGridView dataGridUsuario;
+        private Button btoPesquisaAvancada;
     }
 }
